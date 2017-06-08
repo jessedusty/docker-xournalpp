@@ -14,4 +14,4 @@ RUN make
 RUN make install
 RUN chmod -R 777 /source
 RUN chmod -R 777 /root
-ENTRYPOINT xournalpp
+ENTRYPOINT ["xournalpp"]
