@@ -1,9 +1,5 @@
-FROM ubuntu:16.04
+FROM jessedusty/xournalpp-build
 
-RUN apt-get update
-RUN apt-get install -y git
-RUN apt-get install -y libglibmm-2.4-dev
-RUN apt-get install -y cmake libboost-all-dev libcppunit-dev dvipng texlive liblcms2-dev libopenjpeg-dev libjpeg-dev fontconfig librsvg2-dev libglade2-dev libglade2-dev
 WORKDIR /source
 RUN git clone https://github.com/xournalpp/xournalpp.git
 WORKDIR /source/xournalpp
